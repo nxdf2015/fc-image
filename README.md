@@ -2,8 +2,8 @@
 [Image Abstraction Layer](https://www.freecodecamp.org/challenges/image-search-abstraction-layer)
 ------------
 ##   api
-`- /api/search/[query][?offset=num]  -> search for `query` obtain max num responses
-- /api/latest -> get most recent search string `
+- /api/search/[query][?offset=num]  -> search for `query` obtain max num responses
+- /api/latest -> get most recent search `string` 
 
 ##   code 
 - [ server](https://github.com/nxdf2015/fc-image/blob/master/server.js)
