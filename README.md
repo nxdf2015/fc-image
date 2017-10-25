@@ -5,7 +5,14 @@
 - /api/search/[query][?offset=num]  -> search for `query` obtain max num responses
 - /api/latest -> get most recent search string 
 
-  
+ 
+`[server](https://github.com/nxdf2015/fc-image/blob/master/server.js)
+ [api](https://github.com/nxdf2015/fc-image/tree/master/api)`
+ 
+ `[app](https://fc-image.glitch.me/)`
+ 
+ 
+ 
 
 
 Made by [Fog Creek](https://fogcreek.com/)
