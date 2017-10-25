@@ -1,0 +1,55 @@
+<html>
+  <header>
+   <link rel="stylesheet" href="/css/bootstrap.css">
+  </header>
+  <body>
+    
+    <h1 class="capitalize text-center">
+      Search image
+    </h1>
+    <div class="container ">
+      
+      <div class="row">
+        <div class="col">
+           <form >
+            <div class="form-group">
+              <label for="query">query</label>
+              <input id="query" type="text" name="query"/>
+            </div>
+             <div class="form-group">
+              <label for="offset">offset</label>
+              <input id="offset" type="text" name="offset"/>
+             </div>
+             <br>
+            <button class="btn-success justify-content-left" id="submit">
+              search 
+               </button>
+            
+
+    </form>
+        </div>
+        <div class="col">
+          <button id="latest" class="btn  btn-success">
+            latest image
+          </button>
+        </div>
+      </div>
+    </div>
+   
+    
+    
+       
+  <ul id="result">
+    
+    </ul>
+      
+       
+    
+    
+     
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"> </script>
+  </body>
+</html>
