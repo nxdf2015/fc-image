@@ -3,8 +3,6 @@ var express = require('express');
 var path = require("path")
 var search = require("./api/search.js")
 var mongo = require("./api/mongo.js")
- 
-
 var app = express();
 
 app.use(express.static('public'));
@@ -28,7 +26,8 @@ app.get("/api/search/:query",function(req,res){
 
 app.get("/api/latest",function(req,res){
   mongo.latest(5, data => {
-    res.write(JSON.stringify(data))
+     
+    res.send( data)
     res.end()
     
   })

@@ -11,10 +11,15 @@ $("#submit").on("click",function(e){
         
     $("#latest").on("click",function(e){
        $("#result").empty()
-      $.get("/api/latest").done(setResult)
+      $.get("/api/latest").done(function(result){
+        const {q,count,date} = JSON.parse(result)[0]
+        $("#result").append($("<div></div>" ,{ html : `query : ${q} ,count : ${count} ,date ${date}`}))
+      })
     })
       
    function setResult (data){
-    data.forEach(image => $("#result").append($("<li></li>" ,{ html : JSON.stringify(image)})))
+    console.log(data)
+     data.forEach(image => $("#result").append($("<li></li>" ,{ html : JSON.stringify(image)})))
   }
- 
+   
+    
