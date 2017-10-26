@@ -35,8 +35,10 @@ const search_path= compile()
  
 
 module.exports =function(option_search  , cb ){
-  axios.get( joinPath(search_path(option_search))).then(function(data){
+  console.log(joinPath(search_path(option_search)))
+  axios.get( joinPath(search_path(option_search))).then(function({data}){
    let q = option_search.q
+   console.log(data.items);
    let images = data.items.map(({title,htmlTitle,link,displayLink,image})=> {
        return {q, title,htmlTitle,link,displayLink,image : image['thumbnailLink']}
      })
